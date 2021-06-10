@@ -10,17 +10,20 @@ ramit = {
 # as an argument and returns a new dictionary that includes 
 # a new key friends_count:
 
+new_dict = {}
+
 def countFriends(dict):
     friends = 0
     
-    for item in dict['friends']:
+    for friend in dict['friends']:
         friends += 1
-    dict['friends_count'] = friends
-    return dict
+    new_dict['friends_count'] = friends
+    return new_dict
 
 
 countFriends(ramit)
-print(ramit)
+print(new_dict)
+
 
 
 

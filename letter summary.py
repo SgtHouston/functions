@@ -3,15 +3,17 @@
 # each letter in the alphabet was used in the word.
 # For example Please enter a word: banana --> {'a': 3, 'b': 1, 'n': 2}
 
-
-def letter_histogram(word):
-    letter_count_dict = {}
+def letter_summary(word):
+    
+    dictionary = {}
     
     for letter in word:
-        letter_count_dict[letter] += 1
-    print(letter_count_dict)
+        count = word.count(letter)
+        dictionary[letter] = count
+    return dictionary
 
 
-letter_histogram("banana")
-print(letter_histogram("banana"))
+word_input = input("Please enter a word: ")
+
+print(letter_summary(word_input))
 
