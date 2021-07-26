@@ -59,8 +59,7 @@ while True:
         with open('Todos.json', 'w') as todos_json:
             json.dump(todos, todos_json)
         break
-       
-      
+
 
 with open('Todos.json', 'w') as todos_json:
     json.dump(todos, todos_json)
